@@ -17,12 +17,12 @@
 
     <title>Charls</title>
     <style>
-        .ford {
+        .fondo {
             background-image: url("IMG/2invertida.jpg");
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
             background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
         }
         
         @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
@@ -137,30 +137,32 @@
     </style>
 </head>
 
-<body class="ford">
+<body>
+    <div class="fondo">
+        <img src="IMG/14.png" style="width: 100px;">
 
-    <img src="IMG/14.png" style="width: 100px;">
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-address-card"></i></a></li>
+                    <li><a href="#"><i class="fas fa-project-diagram"></i></a></li>
+                    <li><a href="#"><i class="fas fa-address-book"></i></a></li>
 
-    <div class="wrapper">
-        <div class="sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                <li><a href="#"><i class="fas fa-user"></i></a></li>
-                <li><a href="#"><i class="fas fa-address-card"></i></a></li>
-                <li><a href="#"><i class="fas fa-project-diagram"></i></a></li>
-                <li><a href="#"><i class="fas fa-address-book"></i></a></li>
-
-            </ul>
-            <div class="social_media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                </ul>
+                <div class="social_media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-    </div>
+
+
 
 
 
