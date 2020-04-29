@@ -17,12 +17,30 @@
 
     <title>Charls</title>
     <style>
-        .fondo {
-            background-image: url("IMG/2invertida.jpg");
-            background-size: cover;
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body.fondo {
+            background-image: url('small-IMG/2invertida.jpg');
+            background-size: 100%;
             width: 100%;
             height: 100vh;
             background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* For larger screens */
+        
+        @media only screen and (min-width: 400px) {
+            .fondo {
+                background-image: url("IMG/2invertida.jpg");
+                background-size: 100%;
+                width: 100%;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
         
         @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
@@ -139,7 +157,7 @@
 
 <body>
     <div class="fondo">
-        <img src="IMG/14.png" style="width: 100px;">
+        <img src="IMG/14.png" style="height: 100px;">
 
         <div class="wrapper">
             <div class="sidebar">
