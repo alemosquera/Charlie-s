@@ -17,23 +17,22 @@
 
     <title>Charls</title>
     <style>
-            .body {
+        .body {
             background: url("IMG/2invertida.jpg") no-repeat fixed center center;
             width: 100%;
             height: 100vh;
             background-attachment: inherit;
             background-size: cover;
-            animation: mov 10s infinite linear alternate;
+            /* animation: mov 10s infinite linear alternate; */
         }
-        
-        @keyframes mov {
+        /*  @keyframes mov {
             from {
                 background-position: bottom left;
             }
             to {
                 background-position: top right;
             }
-        }
+        } */
         
         @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
         * {
@@ -55,7 +54,6 @@
             width: 80px;
             height: 100%;
             background: transparent;
-            /* opacity: 0.9; */
             padding: 170px 0 0 0px;
             margin-left: -10px;
             position: fixed;
@@ -150,6 +148,7 @@
         .img-fluid {
             -webkit-filter: drop-shadow(5px 5px 5px black);
             filter: drop-shadow(5px 5px 5px black);
+            margin-left: -30px;
         }
         
         .arriba {
@@ -158,14 +157,47 @@
         
         .card {
             box-shadow: 3px 3px 5px #999;
+        }
+        
+        .fondito {
+            background: url("IMG/chica1.jpg") no-repeat fixed center center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 10px 10px 100px;
+            background-attachment: inherit;
+            background-size: cover;
+            animation: mov 10s infinite linear alternate;
+        }
+        
+        @keyframes mov {
+            from {
+                background-position: left top;
+            }
+            to {
+                background-position: right bottom;
+            }
+        }
+        
+        .fondito {
+            margin-top: -60px;
+        }
+        
+        .navbar {
+            box-shadow: 20px 20px 100px;
+            opacity: 0.8;
+        }
+        
+        .blanco {
+            background-color: white;
+        }
     </style>
 </head>
 
 <body>
     <div class="body">
         <div class="container">
-            <div class="container fixed-top">
-                <img src="IMG/14.png" class="img-fluid" alt="Responsive image" height=" 8% " width="12%">
+            <div class="container">
+                <img src="IMG/14.png" class="img-fluid" alt="Responsive image" height=" 10% " width="20%">
 
             </div>
             <div class="wrapper">
@@ -201,106 +233,70 @@
 
 
     </div>
-    <div class="container">
-        <div class="card mb-3">
-            <img src="IMG/soldando1.jpg" class=" card-img-top img-thumbnail" alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Detras de los detalles</h5>
-                <p class="card-text ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas porro delectus, voluptatum modi ullam minima aspernatur, non deleniti eaque consectetur mollitia iure quo impedit accusamus quia inventore excepturi debitis. Soluta!
-                </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCente">
-                  Click para un consejo
+
+    <div class="fondito">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
+                <a class="navbar-brand" href="#">Navbar</a>
 
-                <!-- boton para que aparezca una ventana Modal -->
-                <div class="modal fade" id="exampleModalCente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-
-                                <h5 class="modal-title bg-" id="exampleModalCenterTitle"></h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body bg-dark">
-                                <img src="IMG/14.png" width="10%" height="8%" class="img-fluid " alt="Responsive image">
-                                <h5 class="text-center text-white">Fuck you</h5>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
-
-
-                <p class="card-text "><small class="text-muted ">Consulta y asesoramiento con cargo</small></p>
-            </div>
+            </nav>
         </div>
     </div>
     </br>
     </br>
     </br>
-
-
-    <!-- comienzan las "cards" con los consejos -->
-
-
-    </div>
+    </br>
     <div class="container">
-        <div class="card mb-3">
-            <img src="IMG/1.jpg" class=" card-img-top img-thumbnail" alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Que Nutrientes necesita?</h5>
-                <p class="card-text ">Los principales nutrientes, elementos y propiedades a tomar en cuenta al momento de comprar una dieta balanceada son las proteínas, la materia grasa, el almidón, la fibra alimentaria, la humedad, los minerales y los oligoelementos, según
-                    la médica veterinaria Martha Gabriela Hernández.
-                    </br> La marca Sieger, al igual que Estampa Premium, Bio Pet, y Eukanuba, desarrollan en sus alimentos combinaciones perfectas de nutrientes para lograr una dieta equilibrada, sana y natural.</br> Te invitamos a ver la tabla de nutrientes
-                    según la edad de tu perro, haciendo click en el boton siguiente.
-                </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCente">
-    Tabla de Nutrientes
-  </button>
-
-                <!-- boton para que aparezca una ventana Modal -->
-                <div class="modal fade" id="exampleModalCente" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-
-                                <h5 class="modal-title bg-" id="exampleModalCenterTitle">Nutrientes</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="IMG/tabla.jpg">
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
-                            </div>
-                        </div>
-                    </div>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="IMG/1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lo que viene</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
-
-
-                <p class="card-text "><small class="text-muted ">Consulta y asesoramiento sin cargo</small></p>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="IMG/ford.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Ford 1964</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="IMG/fabrica.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestro Car Workshop</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
             </div>
         </div>
     </div>
-    </br>
-    </br>
-    </br>
+    <!-- <div class="text-center">
+        <img src="IMG/hueco.png" alt="Responsive image" height="100%" width="100%">
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
 </body>
 
 </html>
